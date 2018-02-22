@@ -1,0 +1,370 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+}
+h1 { font-size: 2em; padding: 18px 0 }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+	margin: :0;
+	padding: 0;
+}
+li{
+	float: left;
+	color: black;
+}
+li a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+label{
+	display: block;
+}
+select{
+	padding: 5px 3px;
+}
+.right{
+	float: right;
+}
+.left{
+	float:left;
+}
+.center{
+	text-align: center;
+}
+.rotate{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari 3-8 */
+    transform: rotate(180deg);
+}
+.atiHeader{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: white;
+	z-index: 99;
+}
+.atiHeader_top{
+	width: 975px;
+	margin: 0 auto;
+	}
+	.atiHeader_top ul{
+		float: left;
+	}
+		.atiHeader_top .navi{
+			border-right: 1px solid #eee; 
+			text-transform: uppercase;
+			font-size: 10px;
+		}
+			.atiHeader_top .navi li{
+				padding-top: 3px
+			}
+		.atiHeader_top img{
+			padding: 0 3px
+		}
+		.atiHeader_top ul:after{
+			border-right: 1px solid #000
+		}
+			.atiHeader_top li a{
+				padding: 19px 9px;
+				color: #009edb
+			}
+				.atiHeader_top li a:hover{
+					background-color: #0065b3;
+					color: white
+				}
+	a.logo{
+		width: 198px;
+		display: inline-flex;
+	}
+.atiHeader_sub{
+	width: 100%;
+	background-color: #0065b3;
+	height: 42px;
+	float: left;
+	margin-top: -2px;
+	background-image: url('asset/Layer-55.png');
+    background-repeat: no-repeat;
+    background-position: right -54px;
+}
+	.atiHeader_sub ul{
+		width: 975px;
+		margin: 0 auto
+	}
+		.atiHeader_sub li{
+			padding: 12px 9px;
+			color: white;
+			display: inline-block;
+		}
+			.atiHeader_sub li:after{
+				content: ">";
+		  		margin-left: 10px;
+				color: white;
+			}
+				.atiHeader_sub li:last-child:after{
+					content: none;
+				}
+.aticontainer{
+	height: auto;
+	width: 100%;
+	display: inline-block;
+	min-height: 500px;
+	top: 95px;
+	position: relative;
+}
+.wd_prime{
+	width: 72%;
+	float: left;
+}
+.wd_sub{
+	width: 28%;
+	float: right;
+}
+.atiStep{
+	min-height: 50px;
+	width: 100%;
+	background: #f3f4f6;
+}
+.atiStep_content{
+	width: 975px;
+	padding: 24px 0;
+	margin: 0 auto;
+	display: flex;
+}
+	.atiStep_content div{
+		display: inline-block;
+	}
+	.atiStep_content .step{
+		width: 107px;
+		color: #aaaaaa;
+	}
+		.atiStep_content hr{
+			height: 2px;
+			border: 0;
+			width: 141px;
+			background: #aaaaaa;
+			display: inline-block;
+			margin: 5px 8px 0px 11px;
+		}
+		.atiStep_content hr.active{
+			background: #1fc4f4;
+		}
+		.atiStep_content .step span{
+			padding: 9px 14px;
+			border-radius: 50px;
+			background: #aaaaaa;
+			margin-right: 10px;
+			color: white;
+		}
+		.atiStep_content .step.active{
+			color: #000 !important;
+		}
+		.atiStep_content .step.active span{
+			background: #1fc4f4 !important;
+		}
+	.atiStep_content .wd_sub a{
+		padding: 4px 12px;
+		background: #1fc4f4;
+		text-decoration: none;
+		float: right;
+		color: white
+	}
+.atiContent{
+	width: 975px;
+	min-height: 400px;
+	margin: 0 auto;
+	display: table;
+}
+.atiContent .wd_prime{
+	padding-bottom: 50px;
+}
+	.atiContent h1 span{
+		font-size: 12px;
+		color: grey
+	}
+.atiContent_prime_box{
+	width: 90%;
+	min-height: 50px;
+	background: #f4fdff;
+	padding: 10px 30px 20px 30px;
+	display: inline-block;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 3px 5px 5px -5px #777;
+       -moz-box-shadow: 3px 5px 5px -5px #777;
+            box-shadow: 3px 5px 5px -5px #777;
+}
+.atiContent_prime_box.pass input{
+	width: 150px;
+	padding: 5px 7px;
+}
+	.atiContent_prime_box h2{
+		position: relative;
+		width: 100%;
+		margin-left: -30px;
+		background: #b6eeff;
+		margin-top: -10px;
+		padding: 10px 30px;
+	}
+	.atiContent_prime_box ul li{
+		margin-right: 15px;
+		padding-top: 10px;
+	}
+		.atiContent_prime_box ul li label{
+			display: block
+		}
+.atiContent_sub_box{
+	width: 80%;
+	min-height: 50px;
+	background: #f5f5f5;
+	padding: 10px 20px;
+	display: inline-block;
+	float: right;
+	-webkit-box-shadow: 3px 7px 6px -5px #777;
+       -moz-box-shadow: 3px 7px 6px -5px #777;
+            box-shadow: 3px 7px 6px -5px #777;
+}
+	.atiContent_sub_box h2{
+		position: relative;
+		width: 100%;
+		margin-left: -20px;
+		background: #1fc4f4;
+		margin-top: -10px;
+		padding: 10px 20px;
+		color: white;
+		margin-bottom: 12px;
+	}
+	.atiContent_sub_box h3{
+		color: #0065b3
+	}
+	.atiContent_sub_box .full{
+		display: block;
+		width: 100%;
+		position: relative;
+		margin: 35px 0 15px -20px;
+		padding-right: 38px;
+	}
+	.atiContent_sub_box form span{
+		display: block;
+	}
+	.atiContent_sub_box .total{
+		position: relative;
+		margin: 36px 0px -10px -20px;
+		background: aqua;
+		padding: 13px 20px 13px 20px;
+		width: 100%;
+		color: black;
+		font-weight: bold;
+	}
+a.gopayment{
+	float: right;
+	padding: 8px 14px;
+	background: #fa8d00;
+	text-transform: uppercase;
+	color: white;
+	margin-right: 9px;
+}
+.tabpay{
+	position: relative;
+	margin-top: 20px;
+}
+.tabpay a{
+	padding: 8px 20px;
+	border: 1px solid #eee;
+	background-color: #f4f4f4;
+	margin-right: 7px;
+	border-bottom: none;
+}
+.tabpay a.active{
+	background-color: #f4fdff;
+}
+.atiContent_prime_box.paywhite{
+	background-color: white
+}
+.paycontent{
+	background-color: #f4fdff;
+	margin-top: 6px;
+	padding: 26px 70px;
+	display: inline-block
+}
+	.paycontent img{
+		width: 78px;
+		margin: 19px 0px 0px 86px;
+	}
+.payinfo{
+	width: 320px;
+	float: left;
+	margin-bottom: 18px;
+}
+.payinfo input{
+	width: 100%;
+}
+.atiFoo{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #0065b3;
+	color: white;
+	text-align: center;
+}
+.atiFoo p{
+	padding: 8px 0px
+}
